@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your AI avatar for free.">
+    <title>Login - Free AI avatar creator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="inputContainer">
+            <form action="return false;" method="post">
+                <div class="input" style="width: 100%;">
+                    <center style="width: 100%;"><h3>LOGIN</h3></center>
+                </div>
+                <div class="input">
+                    <input type="text" id="username" name="username" oninput="checkusername(this.id);"
+                        placeholder="Username" required>
+                </div>
+                <div class="input">
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="forgot">
+                    <a onclick="loadRick();">Forgot password?</a>
+                </div>
+                <div class="input">
+                    <div class="cptcha" style="width: 100%; height: 100%; display: flex;">
+                        <div class="inputarea" style="flex: 1;">
+                            <input onclick="loadRick();" style="width: 20px;" type="checkbox" >
+                        </div>
+                        <div class="image" >
+                            <img style="width: 50px;" src="./captcha.png" >
+                        </div>
+                    </div>
+                </div>
+                <div class="input loginInp">
+                    <button type="submit" onclick="loadRick();" title="Click to login with your existing account.">LOGIN</button>
+                </div>
+                <div class="info">
+                    <span>Dont have an account? <a onclick="loadRick();">SignUp.</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
