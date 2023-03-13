@@ -1,5 +1,5 @@
 function loadRick() {
     setTimeout(() => {
-        location.href = '/rick.html'
+        location.href = './rick.html'
     }, 2000);
 }
